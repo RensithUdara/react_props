@@ -1,23 +1,40 @@
-
 import './App.css';
-import Product from './components/Products';
+import ProductDescription from './components/Products';
 
 function App() {
   return (
     <>
       <h1>My Products</h1>
-      <Product name="Apple" price={150} stats={
-        {
+      <ProductDescription
+        name="Apple"
+        price={150}
+        stats={{
           views: 20,
           purchases: 10
-        }
-      } />
-      <Product name="Orange" price={200} />
-      <Product name="Banana" price={100} />
-      <Product name="Guava" price={120} />
-      <Product name="Grapes" price={430} />
+        }}
+        description="This is product description"
+      />
+      <ProductDescription
+        name="Orange"
+        price={200}
+        description="This is product description"
+      />
+      <ProductDescription
+        name="Banana"
+        price={100}
+        description="This is product description"
+      />
+      <ProductDescription
+        name="Guava"
+        price={120}
+        description="This is product description"
+      />
+      <ProductDescription
+        name="Grapes"
+        price={430}
+        description="This is product description"
+      />
     </>
-
   );
 }
 
