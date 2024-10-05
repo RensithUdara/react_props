@@ -1,13 +1,18 @@
-function ProductDescription({ name, price, stats = { views: 0, purchases: 0 }, description }) {
+function ProductDescription(props) {
+
+    // console.log(props.children)
+    
     return (
         <>
-            <h3>{name}</h3>
+            {/* <h3>{name}</h3>
             <p>Rs.{price}</p>
 
             <p>{stats.views} views</p>
             <p>{stats.purchases} purchases</p>
 
-            <p>{description}</p>
+            <p>{description}</p> */}
+
+            {props.children}
         </>
     );
 }
