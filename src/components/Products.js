@@ -1,8 +1,8 @@
-function Product (props){
+function Product ({ name , price}){
     return (
         <div>
-            <h3>{props.name}</h3>
-            <p>Rs.{props.price}</p>
+            <h3>{name}</h3>
+            <p>Rs.{price}</p>
         </div>
     );
 }
